@@ -10,3 +10,9 @@ KEDA-HTTP is an extension to KEDA that:
 - Reports to KEDA whether, and how it should scale the aforementioned `Deployment`
 
 >The `KEDA-HTTP` software we'll be using in this demo is alpha status. This demo will be based on a [prototype implementation](https://github.com/osscda/kedahttp). The first beta release will be available later this month (January 2021) or early next (February 2021) in [this repository](https://github.com/kedacore/http-add-on).
+
+## Demo Instructions
+
+This demo is based on several repositories and custom-compiled code, so is difficult to replicate right now. It's intended to show the power of KEDA and the new KEDA-HTTP project.
+
+Please watch the [KEDA-HTTP](https://github.com/kedacore/http-add-on) repository for developments in the next few weeks. We'll be releasing a beta soon, at which point it will be possible to take full advantage of this technology.
