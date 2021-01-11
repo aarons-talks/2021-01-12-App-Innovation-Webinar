@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: arschles/xkcd
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
