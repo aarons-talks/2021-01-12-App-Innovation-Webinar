@@ -11,7 +11,13 @@ This demo shows how to deploy apps to Kubernetes using [Helm](https://helm.sh). 
 You need to have a working Kubernetes cluster, and your `kubectl` tool configured to access the cluster. After you've done so, run the below command:
 
 ```shell
-helm upgrade xkcd . --namespace appinnovation --create-namespace --install
+helm upgrade xkcd . --namespace appinno3 --create-namespace --install
 ```
 
 >This command will both install the application _and_ re-deploy it, should you decide to change the chart or otherwise update the application.
+
+To delete the application:
+
+```shell
+helm delete xkcd --namespace appinno3
+```
