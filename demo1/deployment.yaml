@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xkcd
+  labels:
+    app:  xkcd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: xkcd
+  template:
+    metadata:
+      labels:
+        app: xkcd
+    spec:
+      containers:
+        - name: http
+          image: arschles/xkcd
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
