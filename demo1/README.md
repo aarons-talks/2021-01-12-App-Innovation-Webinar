@@ -2,6 +2,8 @@
 
 This demo illustrates how to deploy an HTTP application to [AKS](https://docs.microsoft.com/en-us/azure/aks/) -- Azure's hosted Kubernetes service. We've pre-built a web application that displays [XKCD comics](https://xkcd.com/) and pushed it to [Docker Hub](https://hub.docker.com/r/arschles/xkcd).
 
+>Note: do not use this demo for a production web app. It does not include several features necessary for a secure and robust application on the internet
+
 This deployment is composed of:
 
 - A [`Deployment`](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to create and manage the pods that run the HTTP application
