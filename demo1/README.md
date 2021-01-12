@@ -12,8 +12,9 @@ This deployment is composed of:
 You need to have a working Kubernetes cluster, and your `kubectl` tool configured to access the cluster. After you've done so, run the below commands:
 
 ```shell
-kubectl create ./deployment.yaml --namespace appinno1
-kubectl create ./service.yaml --namespace appinno1
+kubectl create namespace appinno1
+kubectl create -f ./deployment.yaml --namespace appinno1
+kubectl create -f ./service.yaml --namespace appinno1
 ```
 
 If you want to delete the application, simply delete the namespace:
